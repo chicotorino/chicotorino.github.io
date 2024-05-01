@@ -3,26 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARKING | Control de estacionamientos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css ">
+    <title>PARKING | Control de Estacionamientos </title>
 </head>
 <body>
     <header>
-        <center><a href="index.html"><img src="logo.jpg" alt="logo"></center></a>
-        <h1>
-            <center>Soluciones para el control y la gestión de estacionamientos que incluye la más avanzada tecnología de automatización.</center><br>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="mision.html"><b><u>MISION, VISION Y VALORES</u></b></a></li>
-                <li><a href="servicios.html"><b>SERVICIOS</u></b></a></li>
-                <li><a href="propuesta.html"><b>PROPUESTA COMERCIAL</u></b></a></li>
-                <li><a href="contacto.html"><b>CONTACTO</u></b></b></a></li>
-                <br>
-            </ul>
+        <h2 class="logo"><img src="./imagenes/logo.jpg" alt=""></h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="mision-vision-valor.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
         </nav>
     </header>
-    <main>
-        <img src="fondo.jpg" alt="parking">
-    </main>
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3><span>PARKING:</span><br>SISTEMA DE ESTACIONAMIENTO, CONTROL Y GESTION</h3>
+            <a href="#" class="boton-empezar">COTIZA TU PARKING</a>
+        </div>
+    </section>
+    <section id="modalidades">
+        <div>
+            <img src="./imagenes/parkings.jpg" alt="">
+            <h4>PARKING</h4>
+            <p>Grandes y pequeños estacionamientos</p>
+            <a href="#" class="boton-saber-mas">Saber Más</a>
+        </div>
+        <div>
+            <img src="./imagenes/peajes.jpg" alt="">
+            <h4>PEAJES</h4>
+            <p>Autopistas Nacionales</p>
+            <a href="#" class="boton-saber-mas">Saber Más</a>
+        </div>
+    </section>
+
+    <section id="iconos">
+        <div class="contenido-iconos">
+            <div>
+                <i class="fa-solid fa-recycle fa-6x"></i>
+                <h6>Sustentable</h6>
+                <p>Cuidamos la huella de carbono</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench fa-6x"></i>
+                <h6>Soporte 24/7</h6>
+                <p>Los 365 días del año</p>
+            </div>
+            <div id="icono-mobile">
+                <i class="fa-solid fa-mobile fa-6x"></i>
+                <h6>Acceso Remoto</h6>
+                <p>Atención personalizada</p>
+            </div>
+        </div>
+        <div class="boton-iconos">
+            <a href="#" class="boton-saber-mas">Saber Más</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h4>Contactanos</h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre"
+                    placeholder="Nombre">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"
+                    placeholder="Email">
+                </div>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="boton-formulario">
+                <a href="#" class="boton-saber-mas">Enviar Mensaje</a>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2024 Parking</p>
+    </footer>
+
 </body>
 </html>
