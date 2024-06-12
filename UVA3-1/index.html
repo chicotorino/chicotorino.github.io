@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UVA3-1</title>
 </head>
 <body>
-    <H1>PAGINA DE PRUEBA</H1>
+    <H1>UVA3-1</H1>
+    <script>
+        restaFechas = function(f1,f2)
+        {
+        let aFecha1 = f1.split('/');
+        let aFecha2 = f2.split('/');
+        let fFecha1 = Date.UTC(aFecha1[2],aFecha1[1]-1,aFecha1[0]);
+        let fFecha2 = Date.UTC(aFecha2[2],aFecha2[1]-1,aFecha2[0]);
+        let dif = fFecha2 - fFecha1;
+        let dias = Math.floor(dif / (1000 * 60 * 60 * 24));
+        return dias;
+        }
+        let nombre = prompt("Ingrese su Nombre: ");
+        let apellido = prompt("Ingrese su Apellido: ");
+        let Fecha1 = prompt("Ingrese su Fecha de Nacimiento (dd/mm/aaaa): ");
+        let date = new Date();
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
+        let Fecha2 = (day+"/"+month+"/"+year);
+        alert (nombre+" "+apellido+" "+"pasaron: "+restaFechas(Fecha1,Fecha2)+" "+"dias desde que naciste!");
+    </script>
 </body>
 </html>
